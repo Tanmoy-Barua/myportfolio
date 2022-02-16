@@ -4,3 +4,65 @@
 @import './fontawsome/_solid';
 @import './fontawsome/_v4-shims';
 
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.block{
+    padding: 15px;
+    margin: 15px;
+    &.profile-card{
+        display: flex;
+        justify-content: center;
+        .profile-image {
+            text-align: end;
+            img{
+                width: 70%;
+                border-radius: 20px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            }
+        }
+    }
+    &.profile-container{
+        .profile-content{
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            .social-links{
+                display: flex;
+                justify-content: start;
+                a{
+                    margin: 10px;
+                    color: #cccaca;
+                    transition: all 400ms;
+                    i{
+                        font-size: 30px;
+                    }
+                }
+                .facebook{
+                    a{
+                        &:hover{
+                            color: #0F8EF2;
+                        }
+                    }
+                }
+                .linkedin{
+                    a{
+                        &:hover{
+                            color: #0A66C2;
+                        }
+                    }
+                }
+                .github{
+                    a{
+                        &:hover{
+                            color: #161B22;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
